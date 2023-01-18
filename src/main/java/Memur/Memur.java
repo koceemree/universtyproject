@@ -8,7 +8,7 @@ public class Memur extends Calisan {
     public Memur(String adSoyad, String telefon, String eposta, String departman, String mesai) {
         super(adSoyad, telefon, eposta);
         this.departman=departman;
-        this.mesai=departman;
+        this.mesai=mesai;
     }
 
     public String getDepartman() {

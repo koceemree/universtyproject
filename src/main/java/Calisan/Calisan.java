@@ -7,8 +7,8 @@ public class Calisan {
     private String adSoyad;
     private String telefon;
     private String eposta;
-    LocalTime myTime=LocalTime.now();
-    DateTimeFormatter dtfrm = DateTimeFormatter.ofPattern("HH.mm.a");
+   LocalTime myTime=LocalTime.now();
+   DateTimeFormatter dtfrm = DateTimeFormatter.ofPattern("HH.mm.a");
 
     public LocalTime getMyTime() {
         return myTime;
