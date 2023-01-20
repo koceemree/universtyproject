@@ -11,6 +11,15 @@ public class Akademisyen extends Calisan {
       this.unvan=unvan;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Akademisyen{" +
+//                "bolum='" + bolum + '\'' +
+//                ", unvan='" + unvan + '\'' +
+//                super.toString() +
+//                '}';
+//    }
+
     public String getBolum() {
         return bolum;
     }
