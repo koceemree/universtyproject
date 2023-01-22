@@ -4,7 +4,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class Calisan {
+public abstract class Calisan {
     private String adSoyad;
     private String telefon;
     private String eposta;
@@ -81,16 +81,17 @@ public class Calisan {
         this.eposta = eposta;
     }
 
-    public void giris() {
-        System.out.println(this.adSoyad + "üniversiteye  giriş yaptı saat " + dtfrm.format(myTime));
-    }
-
-    public void cikis() {
-
-        System.out.println(this.adSoyad + "üniversiteden  cikis" + " saat " + dtfrm.format(myTime));
-    }
-
-    public void yemekhane() {
-        System.out.println(this.adSoyad + " yemekhaneye giriş yaptı. Saat " + dtfrm.format(myTime));
-    }
+    public abstract void giris() ;
+  //
+    //    }
+    public abstract void mesaiSaati();
+    public abstract void cikis() ;
+//{
+//
+//        System.out.println(this.adSoyad + "üniversiteden  cikis" + " saat " + dtfrm.format(myTime));
+//    }
+    public abstract void yemekhane() ;
+  //  {
+    //        System.out.println(this.adSoyad + " yemekhaneye giriş yaptı. Saat " + dtfrm.format(myTime));
+    //    }
 }

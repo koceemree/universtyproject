@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 import java.util.Scanner;
 
-public class Asistan extends Akademisyen {
+public abstract class Asistan extends Akademisyen {
     private LocalTime OfisSaati = LocalTime.now();
     private DateTimeFormatter ofisFormat = DateTimeFormatter.ofPattern("HH.mm.a");
 
@@ -43,4 +43,5 @@ public class Asistan extends Akademisyen {
 
         System.out.println(this.getAdSoyad() + "Sınav yaptı. Saat: " + getDtfrm().format(getMyTime()));
     }
+
 }

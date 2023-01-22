@@ -3,6 +3,7 @@ import Memur.Memur;
 import akademisyen.Akademisyen;
 import Memur.GuvenlikGorevlisi;
 import akademisyen.Asistan;
+import akademisyen.LabAsistan;
 import akademisyen.OgretimGorevlisi;
 
 import java.util.Scanner;
@@ -33,17 +34,18 @@ public class CalisanRunner {
                 System.out.println("Ogretim gorevlisi sayfamıza hosgeldiniz");
                 System.out.println("İsminizi yazınız");
                 name = scan.nextLine();
-               name= scan.nextLine();
+                name= scan.nextLine();
                 OgretimGorevlisi akd = new OgretimGorevlisi( name, "156545", "exasd", "bilgi", "Docent", "10");
-                akd.getAdSoyad();
+                akd.yemekhane();
                 akd.senatoTop();
+                akd.giris();
             } else if (secme == b) {
                 System.out.println("Asistan sayfamıza hosgeldiniz");
                 System.out.println("İsminizi yazınız");
                 name = scan.nextLine();
                 name= scan.nextLine();
-                Asistan akd = new Asistan(name,"adasda","asdasd","asdasd","asdasd");
-                akd.quizYap();
+                LabAsistan akd = new LabAsistan(name,"adasda","asdasd","asdasd","asdasd");
+                akd.derseGir();
             } else {
                 System.out.println("Hatalı giriş yaptınız");
             }
@@ -65,7 +67,8 @@ public class CalisanRunner {
                 name= scan.nextLine();
                 GuvenlikGorevlisi gv = new GuvenlikGorevlisi(name, "asdasd", "asdasd", "dasdas", "asdasd", "sadasd");
                 gv.getAdSoyad();
-                gv.nobet();
+
+                gv.mesaiSaati();
             } else {
                 System.out.println("Hatalı giriş yaptınız");
             }

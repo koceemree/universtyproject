@@ -2,7 +2,7 @@ package akademisyen;
 
 import Calisan.Calisan;
 
-public class Akademisyen extends Calisan {
+public abstract class Akademisyen extends Calisan {
     private String bolum;
     private String unvan;
     public Akademisyen(String adSoyad, String telefon, String eposta, String bolum, String unvan) {
@@ -39,4 +39,5 @@ public class Akademisyen extends Calisan {
     public void derseGir(){
         System.out.println(this.getAdSoyad() + " derse girdi. Saat " + getDtfrm().format(getMyTime()));
     }
+
 }
