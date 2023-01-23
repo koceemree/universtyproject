@@ -28,6 +28,7 @@ public class OgretimGorevlisi extends Akademisyen{
     }
 
     public void sinavYap(){
+
         System.out.println(this.getAdSoyad() + "Sınavı yaptı");
     }
 

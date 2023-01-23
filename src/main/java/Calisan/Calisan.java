@@ -82,16 +82,9 @@ public abstract class Calisan {
     }
 
     public abstract void giris() ;
-  //
-    //    }
+
     public abstract void mesaiSaati();
     public abstract void cikis() ;
-//{
-//
-//        System.out.println(this.adSoyad + "üniversiteden  cikis" + " saat " + dtfrm.format(myTime));
-//    }
+
     public abstract void yemekhane() ;
-  //  {
-    //        System.out.println(this.adSoyad + " yemekhaneye giriş yaptı. Saat " + dtfrm.format(myTime));
-    //    }
 }

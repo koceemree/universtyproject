@@ -1,11 +1,7 @@
 import Memur.BilgiIslem;
-import Memur.Memur;
-import akademisyen.Akademisyen;
 import Memur.GuvenlikGorevlisi;
-import akademisyen.Asistan;
 import akademisyen.LabAsistan;
 import akademisyen.OgretimGorevlisi;
-
 import java.util.Scanner;
 
 public class CalisanRunner {
@@ -66,8 +62,7 @@ public class CalisanRunner {
                 name = scan.nextLine();
                 name= scan.nextLine();
                 GuvenlikGorevlisi gv = new GuvenlikGorevlisi(name, "asdasd", "asdasd", "dasdas", "asdasd", "sadasd");
-                gv.getAdSoyad();
-
+                gv.yemekhane();
                 gv.mesaiSaati();
             } else {
                 System.out.println("Hatalı giriş yaptınız");

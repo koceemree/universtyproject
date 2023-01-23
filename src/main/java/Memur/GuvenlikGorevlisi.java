@@ -37,7 +37,7 @@ public class GuvenlikGorevlisi extends Memur {
         DateTimeFormatter dtfrm = DateTimeFormatter.ofPattern("HH");
         int saat = Integer.parseInt(dtfrm.format(myTime));
         double girisSaati = 08.00;
-        double cikisSaati = 17.00;
+        double cikisSaati = 16.00;
         if(girisSaati<=saat && cikisSaati>=saat){
           if(girisSaati==saat){
                System.out.println("Mesaiye giriş yaptınız Saat " + getDtfrm().format(getMyTime()));
