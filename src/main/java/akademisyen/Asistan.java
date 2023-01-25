@@ -1,5 +1,7 @@
 package akademisyen;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
@@ -38,7 +40,7 @@ public abstract class Asistan extends Akademisyen {
 //                '}';
 //    }
 
-    public void quizYap() {
+    public void quizYap() throws IOException {
 
 
         System.out.println(this.getAdSoyad() + "Sınav yaptı. Saat: " + getDtfrm().format(getMyTime()));

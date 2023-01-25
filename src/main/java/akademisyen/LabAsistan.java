@@ -1,9 +1,21 @@
 package akademisyen;
 
+import interview.*;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-public class LabAsistan extends Asistan {
+public class LabAsistan extends Asistan  implements Qestion {
+
+    static ArrayList<Deneme> ogrtListesi = new ArrayList<>();
+
     public LabAsistan(String adSoyad, String telefon, String eposta, String bolum, String unvan) {
         super(adSoyad, telefon, eposta, bolum, unvan);
     }
@@ -75,6 +87,48 @@ public class LabAsistan extends Asistan {
             System.out.println("Mesai gelmediğiniz tespit edilmiştir.");
         }
     }
+
+
+    @Override
+    public void quizYap() throws IOException {
+////        FileReader fileReader = new FileReader("C:/Users/asd/IdeaProjects/universtyproject/src/main/java/interview/interview01.txt");
+////        BufferedReader bufferedReader =new BufferedReader(fileReader);
+
+
+//
+//        System.out.println(bufferedReader.readLine());
+
+
+
+        String str = "";
+        int num =(int)(Math.random() * 3 + 1) ;
+            switch (num){
+                case 1 :
+                    InterviewQuestion01 interviewQuestion01 = new InterviewQuestion01();
+                    System.out.println( num+". soru ");
+                    interviewQuestion01.soru();
+                    break;
+                case 2:
+                    InterviewQuestion03 interviewQuestion03 = new InterviewQuestion03();
+                    System.out.println( num+". soru ");
+                    interviewQuestion03.soru();
+                    break;
+
+                case 3:
+                    InterviewQuestion02 interviewQuestion02 = new InterviewQuestion02();
+                    System.out.println( num+". soru ");
+                    interviewQuestion02.soru();
+                    break;
+
+            }
+        }
+
+
+
+
+
+
+
 
     @Override
     public void cikis() {
